@@ -5,7 +5,12 @@ h5 {
     margin-bottom: 1.5rem;
 }
 
+h3 {
+    font-size: 27px;
+}
+
 .wrapper {
+    display: flex;
     margin: 12.5%;
 }
 .inner-wrapper {
@@ -19,9 +24,16 @@ h5 {
     font-size: 1.25rem;
     line-height: 2rem;
 }
+.page-content dl {
+    margin-bottom: 2.5em;
+}
 .profile-title {
     font-weight: 700;
 
+}
+.profile-list {
+    overflow: hidden;
+    margin-bottom: 4rem;
 }
 .profile-list dt {
     min-width: 5em;
@@ -30,9 +42,12 @@ h5 {
 }
 
 .profile-list dt, .profile-list dd {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.2em;
 }
-
+.career-title {
+    font-weight: 700;
+    margin-top: 1rem;
+}
 .career-list dd {
     margin-left: 1em;
 }
@@ -40,4 +55,9 @@ h5 {
 .career-meta {
     color: #949599;
     font-size: .8rem;
+    margin-bottom: 0;
+}
+.career-description {
+    font-size: .9rem;
+    color: #0c0c0c;
 }
