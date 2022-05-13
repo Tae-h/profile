@@ -5,7 +5,7 @@ import {useEffect} from "react";
 import Profile from "./pages/Profile";
 import './css/common.css'
 import Resume from "./pages/Resume";
-import {BrowserRouter, Route, Router} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
 
@@ -16,13 +16,10 @@ function App() {
 
   return (
       <AppLayout>
-          <BrowserRouter>
-              <Router>
-
-                  <Route path="/" element={<Profile/>}/>
-                  <Route path="/pages/resume" element={<Resume/>}/>
-              </Router>
-          </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Profile />}/>
+            <Route path="/pages/resume" element={<Resume />}/>
+        </Routes>
       </AppLayout>
 
   );

@@ -1,3 +1,43 @@
+h5 {
+    font-size: 1.15rem;
+    color: #4d92c4;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
 .wrapper {
     margin: 12.5%;
+}
+.inner-wrapper {
+    max-width: 600px;
+}
+
+.page-header {
+    margin-bottom: 5.0rem;
+}
+.page-subtitle {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.profile-title {
+    font-weight: 700;
+
+}
+.profile-list dt {
+    min-width: 5em;
+    clear: both;
+    float: left;
+}
+
+.profile-list dt, .profile-list dd {
+    margin-bottom: 1.5em;
+}
+
+.career-list dd {
+    margin-left: 1em;
+}
+
+.career-meta {
+    color: #949599;
+    font-size: .8rem;
 }

@@ -1,10 +1,8 @@
 import {memo} from "react";
 import {Layout} from "antd";
 import '../css/Header.css';
-import {BrowserRouter, Link, Router} from "react-router-dom";
+import {Link} from "react-router-dom";
 const {Header} = Layout;
-
-
 
 
 
@@ -16,14 +14,12 @@ const HeaderComponent = memo(() => {
                 header!!
 
                 <nav className="site-nav">
-                    <BrowserRouter>
-                        <Link to="/">
-                            Profile
-                        </Link>
-                        <Link to="/pages/resume">
-                            Career SKills
-                        </Link>
-                    </BrowserRouter>
+                    <Link to="/">
+                        프로필
+                    </Link>
+                    <Link to="/pages/resume">
+                        경력 기술서
+                    </Link>
                 </nav>
             </div>
         </Header>
