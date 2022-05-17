@@ -1,3 +1,42 @@
 .site-header {
     height: 100%;
 }
+
+.site-title {
+    padding-right: 50px;
+}
+.site-nav {
+    flex: 1 1 auto;
+    margin-top: 10%;
+}
+
+
+.page-link {
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 1.111;
+    transition: color 400ms;
+}
+
+.page-link.active {
+    color: #1890ff;
+
+}
+
+.page-link.active::before {
+    border-color: #1890ff;
+    background-color: #1890ff;
+}
+.page-link::before {
+    content: '';
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 1.11rem;
+    height: 1.11rem;
+    border-radius: 50%;
+    border: 1px solid #636466;
+    margin-right: 0.75em;
+    transition: border-color, background-color 400ms;
+    vertical-align: top;
+}

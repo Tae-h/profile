@@ -1,8 +1,8 @@
 import {memo} from "react";
 import {Layout} from "antd";
-import styled from 'styled-components';
 import HeaderComponent from "./Header";
 import FooterComponent from "./Footer";
+import '../css/common.css';
 const {Content} = Layout;
 
 
@@ -14,9 +14,11 @@ const AppLayout = memo(({ children }) => {
 
         <Layout>
             <HeaderComponent />
-            <Content>
+
+            <Content className='site-main'>
                 {children}
             </Content>
+
             <FooterComponent />
         </Layout>
 

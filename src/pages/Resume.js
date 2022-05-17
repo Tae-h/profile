@@ -36,7 +36,7 @@ const Resume = memo(() => {
                             <dt className="profile-title">이메일</dt>
                             <dd className="profile-description">zppy13@gmail.com</dd>
 
-                            <dt className="profile-title">Git</dt>
+                            <dt className="profile-title">Github</dt>
                             <dd className="profile-description">https://github.com/Tae-h</dd>
                         </dl>
 
@@ -168,6 +168,7 @@ const Resume = memo(() => {
                         <p className='behind-text'>
                             능동적으로 프로젝트를 수행하고 다양한 기술과 협업 능력을 높이며 프론트엔드 웹 개발자가 지녀야 할 자질을 쌓아왔습니다.
                             항상 새로운 기술에 대한 관심과 배우고자 하는 열망을 바탕으로 업무에 임하겠습니다.
+
                         </p>
                     </div>
 

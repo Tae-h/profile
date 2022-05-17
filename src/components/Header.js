@@ -10,7 +10,7 @@ const {Header} = Layout;
 const NavStyled = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 `
 
 
@@ -19,14 +19,17 @@ const HeaderComponent = memo(() => {
     return (
         <Header className={'site-header'}>
             <div className={'wrapper'}>
-                <ProfileImage />
+                <div className='site-title'>
+                    <ProfileImage />
+                </div>
+
 
                 <nav className="site-nav">
                     <NavStyled>
-                        <Link to="/">
-                            프로필
+                        <Link to="/" className='page-link active'>
+                            Profile
                         </Link>
-                        <Link to="/pages/resume">
+                        <Link to="/pages/resume" className='page-link'>
                             경력 기술서
                         </Link>
                     </NavStyled>

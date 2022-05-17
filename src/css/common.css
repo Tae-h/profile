@@ -9,9 +9,12 @@ h3 {
     font-size: 27px;
 }
 
+.site-main {
+    padding-bottom: 5rem;
+}
 .wrapper {
     display: flex;
-    margin: 12.5%;
+    margin: 9% 12.5% 0 12.5%;
 }
 .inner-wrapper {
     max-width: 600px;
