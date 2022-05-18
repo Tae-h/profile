@@ -7,6 +7,8 @@ h5 {
 
 h3 {
     font-size: 27px;
+    color: #4d92c4;
+    font-weight: 700;
 }
 
 .site-main {
@@ -17,7 +19,6 @@ h3 {
     margin: 9% 12.5% 0 12.5%;
 }
 .inner-wrapper {
-    max-width: 600px;
 }
 
 .page-header {

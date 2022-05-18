@@ -1,7 +1,7 @@
 import {memo, useEffect, useState} from "react";
-import {Layout, Image} from "antd";
+import {Layout} from "antd";
 import '../css/Header.css';
-import {Link, useHistory, useLocation, useRouteMatch} from "react-router-dom";
+import {Link} from "react-router-dom";
 import ProfileImage from "./ProfileImage";
 import styled from 'styled-components';
 const {Header} = Layout;
@@ -44,22 +44,25 @@ const HeaderComponent = memo(() => {
             <div className={'wrapper'}>
                 <div className='site-title'>
                     <ProfileImage />
+
                 </div>
 
 
                 <nav className="site-nav">
+
                     <NavStyled>
                         <Link to="/" className={'page-link ' + profileActive} onClick={ clickProfile }>
                             Profile
                         </Link>
                         <Link to="/pages/resume" className={'page-link ' + resumeActive} onClick={ clickResume }>
-                            경력 기술서
+                            WorkExperience
                         </Link>
                     </NavStyled>
 
                 </nav>
             </div>
         </Header>
+
     )
 });
 
