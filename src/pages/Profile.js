@@ -25,7 +25,8 @@ const Profile = memo(() => {
                         <div className='sub-introduce'>
                             4년 차 개발자로 작은 SI 회사에서 웹과 앱 서비스를 개발/배포/운영하였습니다.
                             주로 웹 개발을 담당했으며 필요에 따라 PM(Project Manager) 역할을 하기도 하였습니다.
-                            작은 규모의 팀에 첫 번째 개발자로 입사하여 50억 투자를 유치하고 40명 규모의 팀으로 성장할 때까지 필요한 기술 역량을 책임졌던 경험이 있습니다.
+                            {/*작은 규모의 팀에 첫 번째 개발자로 입사하여 50억 투자를 유치하고 40명 규모의 팀으로 성장할 때까지 필요한 기술 역량을 책임졌던 경험이 있습니다.*/}
+
                             <br />
                             <br />
                             비즈니스 성장에 기여하는 일을 최우선으로 합니다.
@@ -63,7 +64,7 @@ const Profile = memo(() => {
                         <h5>Career</h5>
                         <dl className='career-list'>
                             <dt className='career-title'>
-                                (주)이브레인소프트 ( 구 윈드폴 )
+                                (주)이브레인소프트 (구 윈드폴)
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -73,7 +74,10 @@ const Profile = memo(() => {
                                           2022년 4월</time>
                                 </span>
                             </dd>
-                            <dd className="career-description">3년의 띵스플로우 서비스 개발을 마무리하고 다시 프리랜서로 일하고 있습니다.</dd>
+                            <dd className="career-description">
+                                - 2018년, 웹 개발 공부를 시작하여 2019년도에 입사하여 현재까지 다양한 경험을 쌓을 수 있었습니다.
+                                현재까지 계속 현업에서 개발을 하시고 끊임없이 공부하시는 팀장님의 모습을 보며 제가 지향해야할 개발자의 모습을 배울 수 있었습니다.
+                            </dd>
                         </dl>
 
                         <div className='line-content'/>
@@ -81,7 +85,7 @@ const Profile = memo(() => {
                         <h5>Education.</h5>
                         <dl className='career-list'>
                             <dt className='career-title'>
-                                빅데이터 분석 교육과정 수료
+                                - 빅데이터 분석 교육과정 수료
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -91,7 +95,7 @@ const Profile = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                가톨릭 관동대학교 수학교육과 학사
+                                - 가톨릭 관동대학교 수학교육과 학사
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -101,7 +105,7 @@ const Profile = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                둔촌 고등학교
+                                - 둔촌 고등학교 졸업
                             </dt>
                             <dd className="career-meta">
                             <span className="career-date">
@@ -120,8 +124,41 @@ const Profile = memo(() => {
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
-                                    <time dateTime="2005-02-01T00:00:00+00:00">- 2021년 8월 취득</time>
+                                    <time dateTime="2005-02-01T00:00:00+00:00">- 2021년 6월 취득</time>
                                 </span>
+                            </dd>
+                        </dl>
+
+                        <div className='line-content'/>
+
+                        <h5>SKILL.</h5>
+                        <dl className='career-list'>
+                            <dt className='career-title'>
+                                - Front-End
+                            </dt>
+                            <dd className="career-description">
+                                React.js, Vue.js, Angular10, TypeScript
+                            </dd>
+
+                            <dt className='career-title'>
+                                - Back-End
+                            </dt>
+                            <dd className="career-description">
+                                Spring4, Spring Boot, 전자정부프레임워크, Node.js
+                            </dd>
+
+                            <dt className='career-title'>
+                                - Database
+                            </dt>
+                            <dd className="career-description">
+                                Oracle, MySql, MariaDB, MsSql
+                            </dd>
+
+                            <dt className='career-title'>
+                                - Etc
+                            </dt>
+                            <dd className="career-description">
+                                Naver-Cloud-PlatForm, AWS(EC2), NGINX, Jenkins
                             </dd>
                         </dl>
 

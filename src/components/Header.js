@@ -55,7 +55,7 @@ const HeaderComponent = memo(() => {
                             Profile
                         </Link>
                         <Link to="/pages/resume" className={'page-link ' + resumeActive} onClick={ clickResume }>
-                            WorkExperience
+                            Work-Experience
                         </Link>
                     </NavStyled>
 
