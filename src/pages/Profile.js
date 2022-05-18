@@ -137,7 +137,7 @@ const Profile = memo(() => {
                                 - Front-End
                             </dt>
                             <dd className="career-description">
-                                React.js, Vue.js, Angular10, TypeScript
+                                React.js, Vue.js, Angular10, TypeScript, JSP
                             </dd>
 
                             <dt className='career-title'>
@@ -158,7 +158,7 @@ const Profile = memo(() => {
                                 - Etc
                             </dt>
                             <dd className="career-description">
-                                Naver-Cloud-PlatForm, AWS(EC2), NGINX, Jenkins
+                                Naver-Cloud, AWS(EC2), Nginx, Jenkins, ElasticSearch
                             </dd>
                         </dl>
 
