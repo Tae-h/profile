@@ -55,7 +55,8 @@ code {
 .ant-layout-content {
   min-height: 120px;
   background: #fff;
-  padding: 0 50px;
+  padding-right: calc(96px + env(safe-area-inset-left));
+  padding-left: calc(96px + env(safe-area-inset-left));
 }
 [data-theme="dark"] .ant-layout-content {
   background: #107bcb;

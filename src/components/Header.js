@@ -44,9 +44,7 @@ const HeaderComponent = memo(() => {
             <div className={'wrapper'}>
                 <div className='site-title'>
                     <ProfileImage />
-
                 </div>
-
 
                 <nav className="site-nav">
 

@@ -21,9 +21,9 @@ const Resume = memo(() => {
                         <p className='page-subtitle'>
                             4년차 웹 개발자 김태훈입니다.
                         </p>
-                        <div>
+                        {/*<div>
                             웹 표준에 맞춰 의미 있는 구조를 가지며, 다양한 환경에 반응하도록 디자인과 UX를 구현하고, (검색엔진을 포함하여) 모두가 접근 가능한 웹사이트를 만들기 위해 노력하고 있습니다.
-                        </div>
+                        </div>*/}
                     </div>
 
                     <div className='page-content'>
