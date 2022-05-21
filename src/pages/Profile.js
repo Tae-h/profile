@@ -126,7 +126,7 @@ const Profile = memo(() => {
 
                         <div className='line-content'/>
 
-                        <h5>SKILL.</h5>
+                        <h5>Skills.</h5>
                         <dl className='career-list'>
                             <dt className='career-title'>
                                 - Front-End.
