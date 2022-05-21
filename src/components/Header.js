@@ -20,8 +20,9 @@ const HeaderComponent = memo(() => {
 
     useEffect(() => {
         let currentPath = window.location.pathname;
+        let pathArr = currentPath.split('/');
 
-        if ( currentPath === '/' ) {
+        if ( pathArr[pathArr.length -1 ] === 'profile' ) {
             clickProfile();
         } else {
             clickResume();
@@ -49,10 +50,10 @@ const HeaderComponent = memo(() => {
                 <nav className="site-nav">
 
                     <NavStyled>
-                        <Link to="/" className={'page-link ' + profileActive} onClick={ clickProfile }>
+                        <Link to="/profile" className={'page-link ' + profileActive} onClick={ clickProfile }>
                             Profile
                         </Link>
-                        <Link to="/pages/resume" className={'page-link ' + resumeActive} onClick={ clickResume }>
+                        <Link to="/profile/resume" className={'page-link ' + resumeActive} onClick={ clickResume }>
                             Work-Experience
                         </Link>
                     </NavStyled>
