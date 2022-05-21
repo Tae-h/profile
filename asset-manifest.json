@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.dd835acd.css",
-    "main.js": "/profile/static/js/main.580f9b41.js",
-    "static/js/787.5c467991.chunk.js": "/profile/static/js/787.5c467991.chunk.js",
-    "static/media/my_profile.jpg": "/profile/static/media/my_profile.7406396b7885fd957c62.jpg",
-    "index.html": "/profile/index.html",
-    "main.dd835acd.css.map": "/profile/static/css/main.dd835acd.css.map",
-    "main.580f9b41.js.map": "/profile/static/js/main.580f9b41.js.map",
-    "787.5c467991.chunk.js.map": "/profile/static/js/787.5c467991.chunk.js.map"
+    "main.css": "https://Tae-h.github.io/profile/static/css/main.dd835acd.css",
+    "main.js": "https://Tae-h.github.io/profile/static/js/main.5068b4b5.js",
+    "static/js/787.5c467991.chunk.js": "https://Tae-h.github.io/profile/static/js/787.5c467991.chunk.js",
+    "static/media/my_profile.jpg": "https://Tae-h.github.io/profile/static/media/my_profile.7406396b7885fd957c62.jpg",
+    "index.html": "https://Tae-h.github.io/profile/index.html",
+    "main.dd835acd.css.map": "https://Tae-h.github.io/profile/static/css/main.dd835acd.css.map",
+    "main.5068b4b5.js.map": "https://Tae-h.github.io/profile/static/js/main.5068b4b5.js.map",
+    "787.5c467991.chunk.js.map": "https://Tae-h.github.io/profile/static/js/787.5c467991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd835acd.css",
-    "static/js/main.580f9b41.js"
+    "static/js/main.5068b4b5.js"
   ]
 }
