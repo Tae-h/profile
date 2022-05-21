@@ -25,4 +25,6 @@ const AppLayout = memo(({ children }) => {
     )
 });
 
+AppLayout.displayName = 'AppLayout';
+
 export default AppLayout;

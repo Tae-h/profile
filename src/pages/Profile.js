@@ -166,4 +166,6 @@ const Profile = memo(() => {
     )
 });
 
+Profile.displayName = 'Profile';
+
 export default Profile;

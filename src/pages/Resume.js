@@ -165,5 +165,7 @@ const Resume = memo(() => {
     )
 });
 
+Resume.displayName = 'Resume';
+
 export default Resume;
 

@@ -1,11 +1,10 @@
-//import logo from './logo.svg';
 import './App.css';
 import AppLayout from "./components/AppLayout";
 import {useEffect} from "react";
 import Profile from "./pages/Profile";
 import './css/common.css'
 import Resume from "./pages/Resume";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
 

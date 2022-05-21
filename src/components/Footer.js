@@ -62,4 +62,6 @@ const FooterComponent = memo(() => {
     )
 });
 
+FooterComponent.displayName = 'FooterComponent';
+
 export default FooterComponent;

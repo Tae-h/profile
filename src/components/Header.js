@@ -64,4 +64,6 @@ const HeaderComponent = memo(() => {
     )
 });
 
+HeaderComponent.displayName = 'HeaderComponent';
+
 export default HeaderComponent;
