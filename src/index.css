@@ -73,3 +73,6 @@ code {
   margin-bottom: 1em;
 }
 
+.code-box-demo .ant-affix {
+  z-index: 11;
+}

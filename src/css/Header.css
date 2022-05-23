@@ -16,6 +16,7 @@
     margin-bottom: 1em;
     line-height: 1.111;
     transition: color 400ms;
+    cursor : pointer;
 }
 
 .page-link.active {

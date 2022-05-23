@@ -12,14 +12,13 @@ const ProfileImage = memo(() => {
                 preview={{ visible: false }}
                 width={160}
                 src={profileImage}
+                alt="profile"
                 style={{borderRadius: '50%'}}
                 onClick={() => setVisible(true)}
             />
             <div style={{ display: 'none' }}>
                 <Image.PreviewGroup preview={{ visible, onVisibleChange: vis => setVisible(vis) }}>
-                    <Image src={profileImage} width={200}/>
-                    <Image src="https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp" width={200}/>
-                    <Image src="https://gw.alipayobjects.com/zos/antfincdn/x43I27A55%26/photo-1438109491414-7198515b166b.webp" width={200}/>
+                    <Image src={profileImage} width={200} alt={"profile Image"}/>
                 </Image.PreviewGroup>
             </div>
         </>

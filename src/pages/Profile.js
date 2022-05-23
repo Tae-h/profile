@@ -7,11 +7,11 @@ export const PageTitle = styled.h1`
 `;
 
 
-const Profile = memo(() => {
+const Profile = memo((props) => {
 
 
     return (
-        <div className={'wrapper'}>
+        <div className={'wrapper'} id={"component-profile"}>
             <div className={"inner-wrapper"}>
                 <div className='page'>
 

@@ -1,25 +1,42 @@
 import './App.css';
-import AppLayout from "./components/AppLayout";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Profile from "./pages/Profile";
 import './css/common.css'
 import Resume from "./pages/Resume";
-import {Route, Routes} from "react-router-dom";
+import HeaderComponent from "./components/Header";
+import FooterComponent from "./components/Footer";
+import {Layout} from "antd";
+import {Content} from "antd/es/layout/layout";
+
 
 function App() {
+    const [page, setPage] = useState('profile');
 
-  useEffect(() => {
-      document.title = "안녕하세요! 김태훈입니다. | 웹 개발";
-  }, []);
+    useEffect(() => {
+        document.title = "안녕하세요! 김태훈입니다. | 웹 개발";
+    }, []);
 
+
+    const renderPage = () => {
+
+        if ( page === 'profile' ) {
+            return <Profile />
+        } else {
+            return <Resume />
+        }
+    }
 
   return (
-      <AppLayout>
-        <Routes>
-            <Route path="/profile" element={<Profile />}/>
-            <Route path="/profile/resume" element={<Resume />}/>
-        </Routes>
-      </AppLayout>
+      <Layout>
+          <HeaderComponent setPage={setPage}/>
+
+          <Content className='site-main'>
+              { renderPage() }
+          </Content>
+
+          <FooterComponent />
+      </Layout>
+
 
   );
 }

@@ -1,7 +1,6 @@
 import {memo, useEffect, useState} from "react";
 import {Layout} from "antd";
 import '../css/Header.css';
-import {Link} from "react-router-dom";
 import ProfileImage from "./ProfileImage";
 import styled from 'styled-components';
 const {Header} = Layout;
@@ -13,31 +12,27 @@ const NavStyled = styled.div`
   align-items: flex-start;
 `
 
-const HeaderComponent = memo(() => {
+const HeaderComponent = memo(({setPage}) => {
 
     const [profileActive, setProfileActive] = useState( '');
     const [resumeActive, setResumeActive] = useState( '');
 
+
     useEffect(() => {
-        let currentPath = window.location.pathname;
-        let pathArr = currentPath.split('/');
-
-        if ( pathArr[pathArr.length -1 ] === 'profile' ) {
-            clickProfile();
-        } else {
-            clickResume();
-        }
-
+        setProfileActive('active');
+        setResumeActive('');
     }, [])
 
     const clickProfile = (e) => {
         setProfileActive('active');
         setResumeActive('');
+        setPage('profile');
     }
 
     const clickResume = (e) => {
         setProfileActive('');
         setResumeActive('active');
+        setPage('resume');
     }
 
     return (
@@ -50,14 +45,13 @@ const HeaderComponent = memo(() => {
                 <nav className="site-nav">
 
                     <NavStyled>
-                        <Link to="/profile" className={'page-link ' + profileActive} onClick={ clickProfile }>
+                        <div className={'page-link ' + profileActive} onClick={ clickProfile }>
                             Profile
-                        </Link>
-                        <Link to="/profile/resume" className={'page-link ' + resumeActive} onClick={ clickResume }>
+                        </div>
+                        <div className={'page-link ' + resumeActive} onClick={ clickResume }>
                             Work-Experience
-                        </Link>
+                        </div>
                     </NavStyled>
-
                 </nav>
             </div>
         </Header>
