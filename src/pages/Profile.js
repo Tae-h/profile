@@ -24,7 +24,7 @@ const Profile = memo((props) => {
                         </p>
                         <div className='sub-introduce'>
                             4년 차 개발자로 작은 SI 회사에서 웹 서비스를 개발/배포/운영하였습니다.<br />
-                            주로 Front, Back 구분 없이 개발을 담당했으며 필요에 따라 PM(Project Manager) 역할을 하기도 하였습니다.
+                            Front, Back 구분 없이 개발을 담당했으며 필요에 따라 PM(Project Manager) 역할을 하기도 하였습니다.
                             <br />
                             <br />
                             반복되는 일을 자동화하고 비효율적인 프로세스를 개선하는 일을 좋아합니다.<br />
@@ -66,7 +66,7 @@ const Profile = memo((props) => {
                                     <time dateTime="2005-02-01T00:00:00+00:00">
                                         2019년 1월</time>
                                     – <time dateTime="2010-08-01T00:00:00+00:00">
-                                          2022년 4월</time>
+                                          2022년 5월 (퇴사)</time>
                                 </span>
                             </dd>
                             <dd className="career-description">
@@ -129,31 +129,47 @@ const Profile = memo((props) => {
                         <h5>Skills.</h5>
                         <dl className='career-list'>
                             <dt className='career-title'>
-                                - Front-End.
+                                - Language.
                             </dt>
                             <dd className="career-description">
-                                React.js, Vue.js, Angular10, TypeScript, JSP
+                                Java8, Javascript(ES5, ES6), TypeScript, HTML5, CSS3
+
                             </dd>
 
                             <dt className='career-title'>
-                                - Back-End.
+                                - Framework / Library.
                             </dt>
                             <dd className="career-description">
-                                Spring4, Spring Boot, 전자정부프레임워크, Node.js
+                                eGovFrame, Spring4, Spring Boot, 전자정부프레임워크, Node.js, React.js, Vue.js, Angular10,  JSP
                             </dd>
 
                             <dt className='career-title'>
-                                - Database.
+                                - Build
+                            </dt>
+                            <dd className="career-description">
+                                Maven, Gradle, Jenkins
+                            </dd>
+
+                            <dt className='career-title'>
+                                - DBMS.
                             </dt>
                             <dd className="career-description">
                                 Oracle, MySql, MariaDB, MsSql
                             </dd>
 
                             <dt className='career-title'>
+                                - Tool
+                            </dt>
+                            <dd className="career-description">
+                                Git, GitHub, Gitlab, JUnit4, eclipse, vsCode,
+                                Postman, Intellij, Webstorm, dataGrip
+                            </dd>
+
+                            <dt className='career-title'>
                                 - Etc.
                             </dt>
                             <dd className="career-description">
-                                Naver-Cloud, AWS(EC2), Nginx, Jenkins, ElasticSearch
+                                Naver-Cloud, AWS(EC2), Nginx, ElasticSearch, Tomcat
                             </dd>
                         </dl>
 
