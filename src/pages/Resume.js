@@ -1,10 +1,6 @@
 import {memo} from "react";
-import { StarTwoTone} from "@ant-design/icons";
+import {StarFilled, StarTwoTone} from "@ant-design/icons";
 import '../css/resume.css';
-import {PageTitle} from "./Profile";
-
-
-
 
 
 const Resume = memo(() => {
@@ -22,7 +18,7 @@ const Resume = memo(() => {
                         <dl className='career-list'>
 
                             <dt className='career-title'>
-                               - 유니드잡 고도화 프로젝트 <StarTwoTone twoToneColor="#eb2f96" />
+                               - 유니드잡 고도화 프로젝트 <StarFilled  style={{color: '#f7d72a'}} />
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -43,16 +39,15 @@ const Resume = memo(() => {
                                         <li>spring 에서 spring boot 변경</li>
                                     </ol>
                                 </li>
-                                <li>ElasticSearch 의 matching score 를 이용한 인터뷰 매칭 서비스 개발(BackOffice) - 사용자 화면도 개발 하였으나 오픈연기</li>
+                                <li>ElasticSearch 의 matching score 를 이용한 인터뷰 매칭 서비스 개발(BackOffice) - 사용자 화면도 개발 추후 오픈 예정</li>
                                 <li>프로젝트 고도화 및 인터뷰 매칭 서비스 개발 따른 PM, 개발 업무 - 기획, DB설계, 개발</li>
-                                <li>KaKao AlimTalk Api, email api 개발</li>
+                                <li>KaKao AlimTalk Api, email 첨부파일 전송 Api 개발</li>
                                 <li>관리자(BackOffice) - aspose 를 이용한 세금 계산서(excel), 업무협약서(word) 자동완성 및 다운로드 기능 개발</li>
                                 <p>Spring Boot, JSP, Jquery, Vue.js, MySql, Jenkins, Ubuntu, Nginx, </p>
                             </dd>
 
                             <dt className='career-title'>
-                                포들리 (유기, 반려동물 서비스) <StarTwoTone twoToneColor="#eb2f96" /><br/>
-                                - 반려가족, 전문가 연결 서비스
+                                - 포들리 (유기, 반려동물, 반려가족, 전문가 연결 서비스) <StarFilled  style={{color: '#f7d72a'}} /><br/>
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -71,7 +66,7 @@ const Resume = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                - 세이브 더 칠드런 (sck) <StarTwoTone twoToneColor="#eb2f96" />
+                                - 세이브 더 칠드런 (sck)
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -86,7 +81,7 @@ const Resume = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                - SSG건설 빌리브 라이프 주거 서비스 <StarTwoTone twoToneColor="#eb2f96" />
+                                - SSG건설 빌리브 라이프 주거 서비스 <StarFilled  style={{color: '#f7d72a'}} />
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -106,7 +101,7 @@ const Resume = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                - SSG L&B 주류 서비스 유지, 운영 <StarTwoTone twoToneColor="#eb2f96" />
+                                - SSG L&B 주류 서비스 유지, 운영
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -125,7 +120,7 @@ const Resume = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                - 이마트 에브리데이 앱 프리권시 서비스 개발 <StarTwoTone twoToneColor="#eb2f96" />
+                                - 이마트 에브리데이 앱 프리권시 서비스 개발 <StarFilled  style={{color: '#f7d72a'}} />
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
@@ -142,7 +137,7 @@ const Resume = memo(() => {
                             </dd>
 
                             <dt className='career-title'>
-                                - 이마트 에브리데이 서비스 유지 및 운영 <StarTwoTone twoToneColor="#eb2f96" />
+                                - 이마트 에브리데이 서비스 유지 및 운영 <StarFilled  style={{color: '#f7d72a'}} />
                             </dt>
                             <dd className="career-meta">
                                 <span className="career-date">
