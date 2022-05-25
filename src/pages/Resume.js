@@ -61,6 +61,7 @@ const Resume = memo(() => {
                                 <a href="https://www.pawdly.com/">https://www.pawdly.com</a>
                                 <li>포들리 파트너스, 사용자 앱 화면 개발</li>
                                 <li>포들리 관리자 사이트 화면, back-end api 개발</li>
+                                <li>아임포트 휴대폰 본인인증 서비스 개발</li>
                                 <li>사용자 및 관리자 Kakao 알림톡 api 연동, Stibee 이메일 서비스 api 연동</li>
                                 <p>Vue.js, MySql, Spring Boot(Gradle)</p>
                             </dd>
