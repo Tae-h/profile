@@ -143,7 +143,7 @@ const Profile = memo((props) => {
                             </dd>
 
                             <dt className='career-title'>
-                                - Build
+                                - Build.
                             </dt>
                             <dd className="career-skills">
                                 Maven, Gradle, Jenkins
@@ -157,7 +157,7 @@ const Profile = memo((props) => {
                             </dd>
 
                             <dt className='career-title'>
-                                - Tool
+                                - Tool.
                             </dt>
                             <dd className="career-skills">
                                 Git, GitHub, Gitlab, JUnit4, eclipse, vsCode,
