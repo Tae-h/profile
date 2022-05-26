@@ -131,36 +131,35 @@ const Profile = memo((props) => {
                             <dt className='career-title'>
                                 - Language.
                             </dt>
-                            <dd className="career-description">
+                            <dd className="career-skills">
                                 Java8, Javascript(ES5, ES6), TypeScript, HTML5, CSS3
-
                             </dd>
 
                             <dt className='career-title'>
                                 - Framework / Library.
                             </dt>
-                            <dd className="career-description">
-                                eGovFrame, Spring4, Spring Boot, 전자정부프레임워크, Node.js, React.js, Vue.js, Angular10,  JSP
+                            <dd className="career-skills">
+                                eGovFrame, Spring4, Spring Boot, Node.js, React.js, Vue.js, Angular10, JSP
                             </dd>
 
                             <dt className='career-title'>
                                 - Build
                             </dt>
-                            <dd className="career-description">
+                            <dd className="career-skills">
                                 Maven, Gradle, Jenkins
                             </dd>
 
                             <dt className='career-title'>
                                 - DBMS.
                             </dt>
-                            <dd className="career-description">
+                            <dd className="career-skills">
                                 Oracle, MySql, MariaDB, MsSql
                             </dd>
 
                             <dt className='career-title'>
                                 - Tool
                             </dt>
-                            <dd className="career-description">
+                            <dd className="career-skills">
                                 Git, GitHub, Gitlab, JUnit4, eclipse, vsCode,
                                 Postman, Intellij, Webstorm, dataGrip
                             </dd>
@@ -168,7 +167,7 @@ const Profile = memo((props) => {
                             <dt className='career-title'>
                                 - Etc.
                             </dt>
-                            <dd className="career-description">
+                            <dd className="career-skills">
                                 Naver-Cloud, AWS(EC2), Nginx, ElasticSearch, Tomcat
                             </dd>
                         </dl>
