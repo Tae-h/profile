@@ -64,4 +64,6 @@ h3 {
 .career-description {
     font-size: .9rem;
     color: #0c0c0c;
+    background-color: #f1f1ef;
+    padding: 0 10px 0 10px;
 }
