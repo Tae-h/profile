@@ -1,5 +1,5 @@
 import {memo} from "react";
-import {StarFilled, StarTwoTone} from "@ant-design/icons";
+import {StarFilled} from "@ant-design/icons";
 import '../css/resume.css';
 
 
