@@ -139,7 +139,7 @@ const Profile = memo((props) => {
                                 - Framework / Library.
                             </dt>
                             <dd className="career-skills">
-                                eGovFrame, Spring4, Spring Boot, Node.js, React.js, Vue.js, Angular10, JSP
+                                eGovFrame, Spring4, Spring Boot, Node.js, React.js, Vue.js, Angular10, JSP, Jquery
                             </dd>
 
                             <dt className='career-title'>
