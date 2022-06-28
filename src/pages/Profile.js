@@ -1,6 +1,8 @@
 import {memo} from "react";
 import styled from 'styled-components';
 import '../css/profile.css';
+import ProfileImage from "../components/ProfileImage";
+import {Col, Divider, Row, Space} from "antd";
 
 export const PageTitle = styled.h1`
   color: #4d92c4;
@@ -35,49 +37,36 @@ const Profile = memo((props) => {
                     </div>
 
                     <div className='page-content'>
-                        <h5>Profile</h5>
-                        <dl className="profile-list">
-                            <dt className="profile-title">이름</dt>
-                            <dd className="profile-description">김태훈</dd>
+                        <Divider orientation="left">PROFILE.</Divider>
 
-                            <dt className="profile-title">연락처</dt>
-                            <dd className="profile-description">010-9944-8296</dd>
+                        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                            <Col span={8}>
+                                <ProfileImage />
+                            </Col>
 
-                            <dt className="profile-title">이메일</dt>
-                            <dd className="profile-description">zppy13@gmail.com</dd>
+                            <Col span={16} style={{ marginTop: '5%' }} >
+                                <dl className="profile-list" >
+                                    <dt className="profile-title">이름</dt>
+                                    <dd className="profile-description">김태훈</dd>
 
-                            <dt className="profile-title">Github</dt>
-                            <dd className="profile-description">
-                                <a href={'https://github.com/Tae-h'}>
-                                    https://github.com/Tae-h
-                                </a>
-                            </dd>
-                        </dl>
+                                    <dt className="profile-title">연락처</dt>
+                                    <dd className="profile-description">010-9944-8296</dd>
 
-                        <div className='line-content'/>
+                                    <dt className="profile-title">이메일</dt>
+                                    <dd className="profile-description">zppy13@gmail.com</dd>
 
-                        <h5>Career</h5>
-                        <dl className='career-list'>
-                            <dt className='career-title'>
-                                (주)이브레인소프트 (구 윈드폴)
-                            </dt>
-                            <dd className="career-meta">
-                                <span className="career-date">
-                                    <time dateTime="2005-02-01T00:00:00+00:00">
-                                        2019년 1월</time>
-                                    – <time dateTime="2010-08-01T00:00:00+00:00">
-                                          2022년 5월 (퇴사)</time>
-                                </span>
-                            </dd>
-                            <dd className="career-description">
-                                - 2018년 웹 개발 공부를 시작, 2019년도에 입사하여 현재까지 다양한 경험을 쌓을 수 있었습니다.
-                                현재까지 계속 현업에서 개발을 하시고 끊임없이 공부하시는 팀장님의 모습을 보며 제가 지향해야할 개발자의 모습을 배울 수 있었습니다.
-                            </dd>
-                        </dl>
+                                    <dt className="profile-title">Github</dt>
+                                    <dd className="profile-description">
+                                        <a href={'https://github.com/Tae-h'}>
+                                            https://github.com/Tae-h
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </Col>
 
-                        <div className='line-content'/>
+                        </Row>
 
-                        <h5>Education.</h5>
+                        <Divider orientation="left">EDUCATION.</Divider>
                         <dl className='career-list'>
                             <dt className='career-title'>
                                 - 빅데이터 분석 교육과정 수료
@@ -110,9 +99,7 @@ const Profile = memo((props) => {
                             </dd>
                         </dl>
 
-                        <div className='line-content'/>
-
-                        <h5>License.</h5>
+                        <Divider orientation="left">LICENSE.</Divider>
                         <dl className='career-list'>
                             <dt className='career-title'>
                                 정보처리기사 자격증
@@ -124,9 +111,7 @@ const Profile = memo((props) => {
                             </dd>
                         </dl>
 
-                        <div className='line-content'/>
-
-                        <h5>Skills.</h5>
+                        <Divider orientation="left">SKILLS.</Divider>
                         <dl className='career-list'>
                             <dt className='career-title'>
                                 - Language.

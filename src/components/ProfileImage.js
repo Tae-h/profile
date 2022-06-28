@@ -10,10 +10,9 @@ const ProfileImage = memo(() => {
         <>
             <Image
                 preview={{ visible: false }}
-                width={160}
+                style={{width: '100%'}}
                 src={profileImage}
                 alt="profile"
-                style={{borderRadius: '50%'}}
                 onClick={() => setVisible(true)}
             />
             <div style={{ display: 'none' }}>

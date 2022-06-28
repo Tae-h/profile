@@ -28,7 +28,7 @@ function App() {
           <Layout>
               <Helmet>
 
-                  <title>안녕하세요! 김태훈입니다. | 웹 개발</title>
+                  <title>Taehoon Kim - Developer</title>
 
               </Helmet>
 

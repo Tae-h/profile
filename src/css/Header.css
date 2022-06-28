@@ -1,5 +1,8 @@
 .site-header {
-    height: 100%;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    display: flex;
 }
 
 .site-title {

@@ -1,8 +1,9 @@
 import {memo, useEffect, useState} from "react";
-import {Layout} from "antd";
+import {Layout, Menu} from "antd";
 import '../css/Header.css';
 import ProfileImage from "./ProfileImage";
 import styled from 'styled-components';
+import {HomeOutlined, IdcardOutlined, ProfileOutlined} from "@ant-design/icons";
 const {Header} = Layout;
 
 
@@ -19,45 +20,38 @@ const HeaderComponent = memo(({setPage}) => {
 
 
     useEffect(() => {
-        setProfileActive('active');
-        setResumeActive('');
+
     }, [])
 
     const clickProfile = (e) => {
-        setProfileActive('active');
-        setResumeActive('');
+
         setPage('profile');
     }
 
-    const clickResume = (e) => {
-        setProfileActive('');
-        setResumeActive('active');
+    const clickCareer = (e) => {
+
         setPage('resume');
     }
 
     return (
         <Header className={'site-header'}>
-            <div className={'wrapper'}>
-                <div className='site-title'>
-                    <ProfileImage />
-                </div>
 
-                <nav className="site-nav">
+            <Menu mode="horizontal" theme="light" defaultSelectedKeys={["profile"]} style={{width: '100%'}}>
+                <Menu.Item key="profile" icon={<IdcardOutlined />} title="profile" onClick={ clickProfile}>
+                    PROFILE
+                </Menu.Item>
 
-                    <NavStyled>
-                        <div className={'page-link ' + profileActive} onClick={ clickProfile }>
-                            Profile
-                        </div>
-                        <div className={'page-link ' + resumeActive} onClick={ clickResume }>
-                            Work-Experience
-                        </div>
-                    </NavStyled>
-                </nav>
-            </div>
+                <Menu.Item key="career" icon={<ProfileOutlined />} title="CAREERS" onClick={ clickCareer }>
+                    CAREERS
+                </Menu.Item>
+            </Menu>
         </Header>
 
     )
 });
+
+
+
 
 HeaderComponent.displayName = 'HeaderComponent';
 

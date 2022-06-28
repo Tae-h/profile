@@ -37,7 +37,6 @@ h3 {
 }
 .profile-list {
     overflow: hidden;
-    margin-bottom: 4rem;
 }
 .profile-list dt {
     min-width: 5em;
@@ -71,4 +70,10 @@ h3 {
 .career-skills {
     font-size: .9rem;
     color: #0c0c0c;
+}
+
+.content-title {
+    font-size: 1.15rem;
+    color: #4d92c4;
+    font-weight: 700;
 }

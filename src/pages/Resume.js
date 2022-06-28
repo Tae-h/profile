@@ -1,6 +1,7 @@
 import {memo} from "react";
 import {StarFilled} from "@ant-design/icons";
 import '../css/resume.css';
+import {Divider} from "antd";
 
 
 const Resume = memo(() => {
@@ -11,8 +12,26 @@ const Resume = memo(() => {
                 <div className='page'>
 
                     <div className='page-content'>
+                        <Divider orientation="left" >CAREER</Divider>
+                        <dl className='career-list'>
+                            <dt className='career-title'>
+                                (주)이브레인소프트 (구 윈드폴)
+                            </dt>
+                            <dd className="career-meta">
+                                <span className="career-date">
+                                    <time dateTime="2005-02-01T00:00:00+00:00">
+                                        2019년 1월</time>
+                                    – <time dateTime="2010-08-01T00:00:00+00:00">
+                                          2022년 5월 (퇴사)</time>
+                                </span>
+                            </dd>
+                            <dd className="career-description">
+                                - 2018년 웹 개발 공부를 시작, 2019년도에 입사하여 현재까지 다양한 경험을 쌓을 수 있었습니다.
+                                현재까지 계속 현업에서 개발을 하시고 끊임없이 공부하시는 팀장님의 모습을 보며 제가 지향해야할 개발자의 모습을 배울 수 있었습니다.
+                            </dd>
+                        </dl>
 
-                        <h5>Project</h5>
+                        <Divider orientation="left" >PROJECT.</Divider>
                         <p>다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다. </p>
 
                         <dl className='career-list'>
