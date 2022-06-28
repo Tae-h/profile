@@ -1,20 +1,13 @@
-import {memo, useEffect, useState} from "react";
+import {memo} from "react";
 import {Layout, Menu} from "antd";
 import '../css/Header.css';
-import styled from 'styled-components';
 import {IdcardOutlined, ProfileOutlined} from "@ant-design/icons";
 const {Header} = Layout;
 
 
-const NavStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
+
 
 const HeaderComponent = memo(({setPage}) => {
-
-
 
 
 

@@ -10,14 +10,6 @@ export const PageTitle = styled.h1`
   color: #4d92c4;
 `;
 
-const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-};
-
 
 const Profile = memo((props) => {
 
