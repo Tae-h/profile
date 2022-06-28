@@ -29,6 +29,7 @@ code {
 }
 .ant-layout-header {
   background: #fff;
+  padding: 0 12.5%;
 }
 
 .ant-layout-footer {
@@ -55,8 +56,7 @@ code {
 .ant-layout-content {
   min-height: 120px;
   background: #fff;
-  padding-right: calc(96px + env(safe-area-inset-left));
-  padding-left: calc(96px + env(safe-area-inset-left));
+
 }
 [data-theme="dark"] .ant-layout-content {
   background: #107bcb;

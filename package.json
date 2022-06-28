@@ -18,7 +18,10 @@
     "react-meta-tags": "^1.0.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-slider": "^2.0.1",
     "styled-components": "^5.3.3",
+    "swiper": "^8.2.5",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {

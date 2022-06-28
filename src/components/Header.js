@@ -1,9 +1,8 @@
 import {memo, useEffect, useState} from "react";
 import {Layout, Menu} from "antd";
 import '../css/Header.css';
-import ProfileImage from "./ProfileImage";
 import styled from 'styled-components';
-import {HomeOutlined, IdcardOutlined, ProfileOutlined} from "@ant-design/icons";
+import {IdcardOutlined, ProfileOutlined} from "@ant-design/icons";
 const {Header} = Layout;
 
 
@@ -15,13 +14,9 @@ const NavStyled = styled.div`
 
 const HeaderComponent = memo(({setPage}) => {
 
-    const [profileActive, setProfileActive] = useState( '');
-    const [resumeActive, setResumeActive] = useState( '');
 
 
-    useEffect(() => {
 
-    }, [])
 
     const clickProfile = (e) => {
 
@@ -35,8 +30,8 @@ const HeaderComponent = memo(({setPage}) => {
 
     return (
         <Header className={'site-header'}>
-
-            <Menu mode="horizontal" theme="light" defaultSelectedKeys={["profile"]} style={{width: '100%'}}>
+            <span style={{ fontFamily: 'serif', fontSize: ''}}>DEVELOPER</span>
+            <Menu mode="horizontal" theme="light" defaultSelectedKeys={["profile"]} style={{width: '100%', justifyContent: 'end'}}>
                 <Menu.Item key="profile" icon={<IdcardOutlined />} title="profile" onClick={ clickProfile}>
                     PROFILE
                 </Menu.Item>

@@ -16,9 +16,10 @@ h3 {
 }
 .wrapper {
     display: flex;
-    margin: 9% 12.5% 0 12.5%;
+    margin: 5% 12.5% 0 12.5%;
 }
 .inner-wrapper {
+    width: 100%;
 }
 
 .page-header {
@@ -72,7 +73,7 @@ h3 {
     color: #0c0c0c;
 }
 
-.content-title {
+.ant-divider-inner-text {
     font-size: 1.15rem;
     color: #4d92c4;
     font-weight: 700;

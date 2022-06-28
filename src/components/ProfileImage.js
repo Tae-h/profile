@@ -10,7 +10,7 @@ const ProfileImage = memo(() => {
         <>
             <Image
                 preview={{ visible: false }}
-                style={{width: '100%'}}
+                width={200}
                 src={profileImage}
                 alt="profile"
                 onClick={() => setVisible(true)}
