@@ -5,7 +5,7 @@ import {Card, Divider, Timeline} from "antd";
 
 
 
-const Resume = memo(() => {
+const Career = memo(() => {
 
     const borderRadius = {
         borderRadius: '10px'
@@ -222,7 +222,7 @@ const Resume = memo(() => {
     )
 });
 
-Resume.displayName = 'Resume';
+Career.displayName = 'Career';
 
-export default Resume;
+export default Career;
 
