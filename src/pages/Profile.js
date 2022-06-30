@@ -19,10 +19,10 @@ const Profile = memo((props) => {
             <div className={"inner-wrapper"}>
                 <div className='page'>
 
-                    <div className='page-header'>
+                    {/*<div className='page-header'>
                         <PageTitle className='page-title'>
                         </PageTitle>
-                    </div>
+                    </div>*/}
 
                     <div className='page-content'>
                         <Divider orientation="left">PROFILE.</Divider>

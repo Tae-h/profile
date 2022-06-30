@@ -19,7 +19,7 @@ const Career = memo(() => {
                     <div className='page-content'>
 
                         <Divider orientation="left" >CAREERS.</Divider>
-                        <p>다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다. </p>
+                        {/*<p>다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 풍부한 개발 경험을 가지고 있습니다. </p>*/}
 
                         <dl className='career-list'>
                             <dt className='career-title'>

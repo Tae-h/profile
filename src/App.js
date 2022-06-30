@@ -29,6 +29,7 @@ function App() {
   return (
       <>
           <Layout>
+
               <Helmet>
                   <title>Taehoon Kim - Developer</title>
               </Helmet>
