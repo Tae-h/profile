@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {useRef} from "react";
-import {Button, Card, Col, Divider, Row} from "antd";
-import {ArrowLeftOutlined, ArrowRightOutlined} from "@ant-design/icons";
+import {Button, Card, Col, Divider, Row, Timeline} from "antd";
+import {ArrowLeftOutlined, ArrowRightOutlined, SmileOutlined} from "@ant-design/icons";
 
 
 
@@ -65,30 +65,23 @@ const Home = () => {
                     </div>
                     {/* slick */}
                     <div className='page-content'>
-                        <Slider {...settings} ref={slider} style={{border: '1px solid black'}}>
-                            <div>
-                                <h3 style={contentStyle}>1</h3>
+                        <Slider {...settings} ref={slider} style={{border: '1px solid black', height: '400px'}}>
+                            <div style={{height: '100%'}}>
+                                <div style={contentStyle}>1</div>
                             </div>
 
                             <div>
-                                <Card bordered={true}
-                                      style={{ width: 300 }}
-                                      cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-                                >
+                                <Card hoverable>
                                     <p>Card content</p>
                                     <p>Card content</p>
                                     <p>Card content</p>
                                 </Card>
                             </div>
+
                             <div>
                                 <h3>4</h3>
                             </div>
-                            <div>
-                                <h3>5</h3>
-                            </div>
-                            <div>
-                                <h3>6</h3>
-                            </div>
+
                         </Slider>
 
                         <div style={{ textAlign: "center", marginTop: '24px', marginBottom: '24px' }}>
@@ -112,17 +105,43 @@ const Home = () => {
 
                         <Divider orientation="left" >EXPERIENCE.</Divider>
                         {/* Row */}
-                        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ }}>
-                            <Col span={8}>
+                        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ justifyContent: 'center' }}>
+                            <Col span={8} style={{alignItems: 'center'}}>
                                 <Card hoverable
-                                      cover={<img alt="backend"
-                                                  style={{height: '250px'}}
-                                                  src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                                      />}
+                                      cover={
+                                        <div style={{backgroundColor: 'rgba(0,0,0,.5)'}}>
+                                            <img alt="frontend"
+                                                  style={{height: '250px', width: '100%', backgroundSize: 'cover'}}
+                                                  src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>
+                                        </div>}
                                 >
-                                    <p>Card content</p>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
+                                    <Timeline>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="red">
+                                            <p>Solve initial network problems 1</p>
+                                            <p>Solve initial network problems 2</p>
+                                            <p>Solve initial network problems 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item>
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="#00CCFF" dot={<SmileOutlined />}>
+                                            <p>Custom color testing</p>
+                                        </Timeline.Item>
+                                    </Timeline>
                                 </Card>
                             </Col>
 
@@ -130,12 +149,35 @@ const Home = () => {
                                 <Card hoverable
                                       cover={<img alt="frontend"
                                                   style={{height: '250px'}}
-                                                  src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-                                      />}
+                                                  src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}
                                 >
-                                    <p>Card content</p>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
+                                    <Timeline>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="red">
+                                            <p>Solve initial network problems 1</p>
+                                            <p>Solve initial network problems 2</p>
+                                            <p>Solve initial network problems 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item>
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="#00CCFF" dot={<SmileOutlined />}>
+                                            <p>Custom color testing</p>
+                                        </Timeline.Item>
+                                    </Timeline>
                                 </Card>
                             </Col>
 
@@ -146,9 +188,33 @@ const Home = () => {
                                                   src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
                                       />}
                                 >
-                                    <p>Card content</p>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
+                                    <Timeline>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                                        <Timeline.Item color="red">
+                                            <p>Solve initial network problems 1</p>
+                                            <p>Solve initial network problems 2</p>
+                                            <p>Solve initial network problems 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item>
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="gray">
+                                            <p>Technical testing 1</p>
+                                            <p>Technical testing 2</p>
+                                            <p>Technical testing 3 2015-09-01</p>
+                                        </Timeline.Item>
+                                        <Timeline.Item color="#00CCFF" dot={<SmileOutlined />}>
+                                            <p>Custom color testing</p>
+                                        </Timeline.Item>
+                                    </Timeline>
                                 </Card>
                             </Col>
 
